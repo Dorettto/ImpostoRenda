@@ -54,9 +54,14 @@ public class ImpostoRenda {
                 //---------------------------------------Saídas-------------------------------------------//
                 
                 System.out.println("--------------------------------------------------------------------");
-                System.out.println(nome+", seu rendimento anual foi de: R$"+salario);
-                System.out.println("Sua base de cálculo para o imposto é de R$"+baseCalculo+" resultando em uma alíquota de "+aliquota+"%");
-                System.out.println("");
+                System.out.println(nome+", seu rendimento anual foi de: R$ "+salario);
+                System.out.printf("Base de cálculo: R$ %.2f\n",baseCalculo);
+                System.out.println("Alíquota: "+aliquota+"%");
+                System.out.printf("Imposto bruto: R$ %.2f\n",impostoBruto);
+                System.out.printf("Dedução de Imposto: R$ %.2f\n",deducao);
+                System.out.printf("Imposto a pagar: R$ %.2f\n",impostoLiquido);
+                System.out.println("--------------------------------------------------------------------");
+
                 scan.close();
 	}
 
