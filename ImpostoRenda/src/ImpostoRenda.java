@@ -7,20 +7,21 @@ public class ImpostoRenda {
 
                 //--------------------------------Primeiras Informações-----------------------------------//
                 System.out.println("***Bem Vindo ao Programa de Declaração do Imposto sobre a Renda Anual***");
-                String cpf, nome;
+                String nome;
 
                 System.out.println("Insira seu nome completo: ");
                 nome = scan.nextLine();
-
-                System.out.println("Insira seu CPF: ");
-                cpf = scan.nextLine();
                 
                 //--------------------------------Cálculo de Salário Anual--------------------------------//
-                Double salario = 0.0;
+                Double salario = 0.0, decimo = 0.0, salarioAnual;
                 for (int i = 1; i < 13; i++){
                         System.out.println("Informe seus rendimentos de "+i+ "/2024");
                         salario += scan.nextDouble();
                 }
+                System.out.println("Informe seu décimo terceiro:");
+                decimo = scan.nextDouble();
+
+                salarioAnual = decimo + salario;
 
                 //----------------------------------Cálculo de Imposto------------------------------------//
                 Double baseCalculo, aliquota, impostoBruto, deducao, impostoLiquido;
@@ -54,7 +55,7 @@ public class ImpostoRenda {
                 //---------------------------------------Saídas-------------------------------------------//
                 
                 System.out.println("--------------------------------------------------------------------");
-                System.out.println(nome+", seu rendimento anual foi de: R$ "+salario);
+                System.out.println(nome+", seu rendimento anual foi de: R$ "+salarioAnual);
                 System.out.printf("Base de cálculo: R$ %.2f\n",baseCalculo);
                 System.out.println("Alíquota: "+aliquota+"%");
                 System.out.printf("Imposto bruto: R$ %.2f\n",impostoBruto);
