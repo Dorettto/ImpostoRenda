@@ -6,7 +6,7 @@ public class ImpostoRenda {
                 Scanner scan = new Scanner (System.in);
 
                 //--------------------------------Primeiras Informações-----------------------------------//
-                System.out.println("***Bem Vindo ao Programa de Declaração do Imposto sobre a Renda***");
+                System.out.println("***Bem Vindo ao Programa de Declaração do Imposto sobre a Renda Anual***");
                 String cpf, nome;
 
                 System.out.println("Insira seu nome completo: ");
@@ -58,7 +58,7 @@ public class ImpostoRenda {
                 System.out.printf("Base de cálculo: R$ %.2f\n",baseCalculo);
                 System.out.println("Alíquota: "+aliquota+"%");
                 System.out.printf("Imposto bruto: R$ %.2f\n",impostoBruto);
-                System.out.printf("Dedução de Imposto: R$ %.2f\n",deducao);
+                System.out.printf("Dedução de Imposto na fonte: R$ %.2f\n",deducao);
                 System.out.printf("Imposto a pagar: R$ %.2f\n",impostoLiquido);
                 System.out.println("--------------------------------------------------------------------");
 
