@@ -7,10 +7,13 @@ public class ImpostoRenda {
 
                 //--------------------------------Primeiras Informações-----------------------------------//
                 System.out.println("***Bem Vindo ao Programa de Declaração do Imposto sobre a Renda Anual***");
-                String nome;
+                String nome, cpf;
 
                 System.out.println("Insira seu nome completo: ");
                 nome = scan.nextLine();
+
+                System.out.println("Insira seu cpf: ");
+                cpf = scan.nextLine();
                 
                 //--------------------------------Cálculo de Salário Anual--------------------------------//
                 Double salario = 0.0, decimo = 0.0, salarioAnual;
